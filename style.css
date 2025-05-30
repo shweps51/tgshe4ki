@@ -32,6 +32,7 @@ body {
     text-decoration: none;
     margin-left: 20px;
     font-size: 16px;
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных */
 }
 
 /* Поиск */
@@ -58,6 +59,7 @@ body {
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     font-size: 16px;
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных */
 }
 
 /* Галерея музеев */
@@ -67,8 +69,6 @@ body {
     padding: 0 20px;
 }
 
-/* ... (остальные стили как в предыдущем варианте) ... */
-
 .museum-item {
     position: relative;
     margin-bottom: 30px;
@@ -76,6 +76,7 @@ body {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных */
 }
 
 .museum-image {
@@ -110,22 +111,30 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
+
 a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    -webkit-tap-highlight-color: transparent; /* Основное правило для ссылок */
 }
 
-a:hover {
-    color: #87cefa; /* голубой */
-}
-
+/* Убираем подсветку для всех интерактивных элементов на мобильных */
 @media (hover: none) and (pointer: coarse) {
-    a:active,
-    a:focus {
-        color: white !important;
+    a, button, input, textarea, select {
+        -webkit-tap-highlight-color: transparent;
         outline: none;
     }
+    
+    a:active, a:focus {
+        color: white !important;
+        background-color: transparent !important;
+    }
+}
+
+/* Анимации при наведении */
+a:hover {
+    color: #87cefa;
 }
 
 .museum-item:hover .museum-image {
