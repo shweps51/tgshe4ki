@@ -1,0 +1,138 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Шапка */
+.header {
+    background-color: #5171ff;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align:center
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+/* Поиск */
+.search-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #5171ff;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #5171ff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Галерея музеев */
+.museums-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ... (остальные стили как в предыдущем варианте) ... */
+
+.museum-item {
+    position: relative;
+    margin-bottom: 30px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.museum-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.museum-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.museum-description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 25px;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    line-height: 1.6;
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #87cefa; /* голубой */
+}
+
+/* Анимации при наведении */
+a:hover {
+    color: #87cefa; /* голубой */
+}
+.museum-item:hover .museum-image {
+    filter: brightness(0.7);
+}
+
+.museum-item:hover .museum-title {
+    transform: translateY(-40px);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+}
+
+.museum-item:hover .museum-description {
+    transform: translateY(0);
+}
