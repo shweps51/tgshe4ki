@@ -30,7 +30,7 @@ museums_db = [
     ),
     Museum(
         id=2,
-        title="Канальчик свитер 50к",
+        title="Канальчик кьюти",
         image="../images/qute.png",
         description="""<a href="https://t.me/qut3e" target="_blank">Ссылочка на тгк</a>"""
     ),
