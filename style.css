@@ -120,13 +120,14 @@ a:hover {
     color: #87cefa; /* голубой */
 }
 
-/* Анимации при наведении */
-a:hover {
-    color: #87cefa; /* голубой */
+@media (hover: none) and (pointer: coarse) {
+    a:active,
+    a:focus {
+        color: white !important;
+        outline: none;
+    }
 }
-a:visited {
-    color: white;
-}
+
 .museum-item:hover .museum-image {
     filter: brightness(0.7);
 }
