@@ -24,8 +24,59 @@ const museumsData = [
         title:"Патипаблик",
         image:"images/party.png",
         description:'<a href="https://t.me/partyypublic" target="_blank">Ссылочка на тгк</a>'
-    }
-    // ... остальные музеи
+    },
+    {
+        id:5,
+        title:"Лика",
+        image:"images/lika.png",
+        description:'<a href="https://t.me/lilshirchirr_meow" target="_blank">Ссылочка на ткг</a>'
+
+    },
+    { 
+        id:6,
+        title:"Леся гг",
+        image:"images/lesyagg.png",
+        description:'<a href="https://t.me/leesssu" target="_blank">Ссылочка на тгк</a>'
+        
+    },
+    {
+        id:7,
+        title:"Хоумис",
+        image:"images/homis.png",
+        description:'<a href="https://t.me/shsbbd228" target="_blank">Ссылочка на тгк</a>'
+    },
+    {
+        id:8,
+        title:"Леся Плюшкина",
+        image:"images/plushka.png",
+        description:'<a href="https://t.me/sinlessnes" target="_blank">Ссылочка на тгк</a>'
+    },
+    {
+        id:9,
+        title:"Культурные ребята",
+        image:"images/cultreb.png",
+        description:'<a href="https://t.me/Kichirow" target="_blank">Ссылочка на тгк</a>'
+
+    },
+    {
+        id:10,
+        title:"Илкин",
+        image:"images/ilkin.png",
+        description:'<a href="https://t.me/pogibni" target="_blank">Ссылочка на тгк</a>'
+    },
+    {
+        id:11,
+        title:"Р0дные",
+        image:"images/r0dnie.png",
+        description:'<a href="https://t.me/rodniiiiiiii" targe="_blank">Ссылочка на тгк</a>'
+    },
+    {
+        id:12,
+        title:"Уставшая",
+        image:"images/ustavshaya.png",
+        description:'<a href="https://t.me/ustavshaya1" target="_blank">Ссылочка на тгк</a>'
+    },
+    
 ];
 
 // Функция поиска
