@@ -124,6 +124,10 @@ a:hover {
 a:hover {
     color: #87cefa; /* голубой */
 }
+a:visited {
+color: white;
+
+}
 .museum-item:hover .museum-image {
     filter: brightness(0.7);
 }
