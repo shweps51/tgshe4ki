@@ -2,19 +2,19 @@
 const museumsData = [
     {
         id:1,
-        title:"Канальчик Денчика",
+        title:"Денчик",
         image:"images/sicko.png",
         description:'<a href="https://t.me/sickorevenge" target="_blank">Ссылочка на тгк</a>'
     },
     {
         id:2,
-        title:"Канальчик кьюти",
+        title:"Ваня кьюти",
         image:"images/qute.png",
         description:'<a href="https://t.me/qut3e" target="_blank">Ссылочка на тгк</a>'
     },
     {
         id:3,
-        title:"Канальчик снежаны",
+        title:"Снежа кьюти",
         image:"images/snezha.png",
         description:'<a href="https://t.me/user1ecx1tal0hh" target="_blank">Ссылочка на тгк</a>'
 
